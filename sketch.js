@@ -13,14 +13,14 @@ function setup()
 speed = random(50,90);
 thickness = random(23,83);
 weigth = random(400,1200);
-
+  bullet.velocityX = speed;
 }
 
 function draw() {
   background(0,0,0);  
   
 
-  bullet.velocityX = speed;
+
 
 
 if( hasCollided(bullet,wall) )
